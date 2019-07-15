@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="1045.0" stylesheets="@AlgoTruco.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fiuba.algo3.tpfinal.control.JuegoFinalizadoControl">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="48.0" prefHeight="87.0" prefWidth="463.0" styleClass="label-bordeau" text="Ha finalizado el juego">
+         <font>
+            <Font name="Arial Bold" size="42.0" />
+         </font></Label>
+      <Label layoutX="106.0" layoutY="186.0" prefHeight="44.0" prefWidth="187.0" styleClass="label-bordeau" text="Felicidades, ">
+         <font>
+            <Font size="32.0" />
+         </font></Label>
+      <Label layoutX="179.0" layoutY="278.0" prefHeight="44.0" prefWidth="297.0" styleClass="label-bordeau" text="Que desea hacer ahora?">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+       <Button fx:id="botonComenzarJuego" layoutX="23.0" layoutY="346.0" mnemonicParsing="false" onAction="#opcionNuevoJuegoHandler" prefHeight="87.0" prefWidth="281.0" text="Jugar de nuevo">
+           <font>
+               <Font name="System Bold" size="24.0" />
+           </font></Button>
+       <Button fx:id="botonSalirJuego" layoutX="349.0" layoutY="347.0" mnemonicParsing="false" onAction="#opcionCerrarHandler" prefHeight="86.0" prefWidth="277.0" text="Salir">
+           <font>
+               <Font name="System Bold" size="27.0" />
+           </font></Button>
+      <Label fx:id="labelGanador" layoutX="340.0" layoutY="186.0" prefHeight="44.0" prefWidth="163.0" styleClass="label-bordeau">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
